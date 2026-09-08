@@ -1,2 +1,0 @@
-SELECT TOP 1 FName, Minit, LName, SSN, CONVERT(VARCHAR,[BDate],103) AS BDate FROM Employee WHERE Sex = 'F' ORDER BY Salary DESC;
-GO

@@ -1,8 +1,0 @@
--- CREATE TABLE
-CREATE DATABASE FacultyIT;
-GO
-
-USE FacultyIT;
-GO
-
--- CREATE TABLE

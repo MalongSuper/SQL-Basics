@@ -1,2 +1,0 @@
-SELECT TOP 3 * FROM Employee ORDER BY Salary DESC;
-GO
