@@ -1,0 +1,15 @@
+USE Library;
+GO
+
+ALTER TABLE Book
+ADD CONSTRAINT df_ImportDate DEFAULT GETDATE() FOR ImportDate;
+GO
+
+ALTER TABLE Book
+ADD CONSTRAINT df_Status DEFAULT 1 FOR Status;
+GO
+
+ALTER TABLE Borrowed
+ADD CONSTRAINT df_BorrowedDate DEFAULT GETDATE() FOR BorrowedDate;
+GO
+
