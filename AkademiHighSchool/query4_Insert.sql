@@ -1,0 +1,150 @@
+-- Insert value
+INSERT INTO TeachingStaff (StaffID, FName, LName, MainRole, Strength, MainPersona) VALUES
+('T001', 'Kocho', 'Shuyona', 'Headmaster', 'Carries a Teaser', 'Strict'),
+('T002', 'Genka', 'Kunahito', 'Guidance Counselor', 'Extensive Training', 'Strict'),
+('T101', 'Reina', 'Nabatame', 'Teacher', 'Extensive Training', 'Strict'),
+('T102', 'Natsuki', 'Aburaya', 'Teacher', 'Extensive Training', 'Strict'),
+('T103', 'Rino', 'Fukahori', 'Teacher', 'Extensive Training', 'Strict'),
+('T104', 'Shiori', 'Rikitake', 'Teacher', 'Extensive Training', 'Strict'),
+('T105', 'Karin', 'Hanabusa', 'Teacher', 'Extensive Training', 'Strict'),
+('T106', 'Kaho', 'Kanokogi', 'Teacher', 'Extensive Training', 'Strict'),
+('T107', 'Mida', 'Rana', 'Teacher', 'Extensive Training', 'Lovestruck'),
+('T108', 'Kyoshi', 'Tachikawa', 'Outside Teacher', 'Extensive Training', 'Strict'),
+('T201', 'Nasu', 'Kankoshi', 'Nurse', 'Extensive Training', 'Strict'),
+('T202', 'Muja', 'Kina', 'Nurse', 'Incapable', 'Lovestruck');
+GO
+
+
+INSERT INTO Class (ClassID, ClassName, TeacherID) VALUES
+('C011', '1-1', 'T101'),
+('C012', '1-2', 'T102'),
+('C021', '2-1', 'T103'),
+('C022', '2-2', 'T104'),
+('C031', '3-1', 'T105'),
+('C032', '3-2', 'T106');
+GO
+
+-- Club
+INSERT INTO Club (ClubID, ClubName, ClubLeaderID) VALUES
+('B001', 'Cooking Club', NULL),
+('B002', 'Drama Club', NULL),
+('B003', 'Occult Club', NULL),
+('B004', 'Art Club', NULL),
+('B005', 'Light Music Club', NULL),
+('B006', 'Martial Arts Club', NULL),
+('B007', 'Photography Club', NULL),
+('B008', 'Science Club', NULL),
+('B009', 'Sports Club', NULL),
+('B010', 'Gardening Club', NULL),
+('B011', 'Gaming Club', NULL),
+('B101', 'Delinquents', NULL),
+('B102', 'Student Council', NULL),
+('B103', 'Bullies', NULL);
+GO
+
+
+
+
+
+
+INSERT INTO Student (StudentID, FName, LName, Birthday, Gender, 
+ClassNo, ClubNo, Strength, MainPersona) 
+VALUES 
+('S101', 'Ayano', 'Aishi', '2004-04-01', 'F', 'C021', NULL, 'Invincible', 'Devoted'),
+('S102', 'Taro', 'Yamada', '2003-04-01', 'M', 'C032', NULL, 'Incapable', 'Loner'),
+('S103', 'Sakyu', 'Basu', '2004-10-31', 'F', 'C022', NULL, 'Incapable', 'Social Butterfly'),
+('S104', 'Inkyu', 'Basu', '2004-10-31', 'F', 'C022', NULL, 'Incapable', 'Social Butterfly'),
+('S105', 'Kumi', 'Demura', '2005-12-14', 'F', 'C011', NULL, 'Incapable', 'Loner'),
+('S106', 'Horuda', 'Umetsu','2005-02-20', 'F', 'C012', NULL, 'Incapable', 'Fragile'),
+('S107', 'Kyuji', 'Konagawa','2003-01-15', 'M', 'C031', NULL, 'Very Weak', 'Loner'),
+('S108', 'Otohiko', 'Meichi','2005-02-15', 'M', 'C011', NULL, 'Incapable', 'Coward'),
+('S109', 'Hazu', 'Kashibuchi','2005-12-15', 'M', 'C012', NULL, 'Incapable', 'Coward'),
+('S110', 'Toga', 'Tahara','2003-01-17', 'M', 'C032', NULL, 'Very Weak', 'Loner'),
+('S111', 'Raibaru', 'Fumetsu','2004-07-15', 'F', 'C021', NULL, 'Invincible', 'Protective'),
+('S112', 'Osana', 'Najimi','2004-01-01', 'F', 'C021', NULL, 'Very Weak', 'Lovestruck'),
+('S113', 'Amai', 'Odayaka','2004-02-02', 'F', 'C022', 'B001', 'Very Weak', 'Lovestruck'),
+('S114', 'Kizana', 'Shinobu','2004-03-03', 'F', 'C022', 'B002', 'Incapable', 'Lovestruck'),
+('S115', 'Oka', 'Ruto','2004-04-04', 'F', 'C022', 'B003', 'Incapable', 'Lovestruck'),
+('S116', 'Asu', 'Rito','2004-05-05', 'F', 'C022', 'B009', 'Incapable', 'Lovestruck'),
+('S117', 'Osoro', 'Shidesu','2004-08-08', 'F', 'C022', 'B101', 'Invincible', 'Lovestruck'),
+('S118', 'Hanako', 'Yamada','2005-09-09', 'F', 'C012', NULL, 'Incapable', 'Lovestruck'),
+('S119', 'Megami', 'Saikou','2004-10-10', 'F', 'C022', 'B102', 'Invincible', 'Lovestruck'),
+('S120', 'Shoku', 'Tsuburaya','2003-08-18', 'M', 'C032', 'B001', 'Incapable', 'Social Butterfly'),
+('S121', 'Kenko', 'Sukoyaka','2003-04-07', 'M', 'C031', 'B001', 'Incapable', 'Social Butterfly'),
+('S122', 'Seiyo', 'Akanishi','2004-04-06', 'M', 'C021', 'B001', 'Incapable', 'Social Butterfly'),
+('S123', 'Ajia', 'Ashitomi','2005-08-15', 'F', 'C012', 'B001', 'Incapable', 'Social Butterfly'),
+('S124', 'Saki', 'Miyu','2005-08-31', 'F', 'C011', 'B001', 'Incapable', 'Social Butterfly'),
+('S125', 'Tsuruzo', 'Yamazaki','2003-08-18', 'M', 'C032', 'B002', 'Incapable', 'Social Butterfly'),
+('S126', 'Shozo', 'Kurusawa','2003-03-23', 'M', 'C031', 'B002', 'Incapable', 'Social Butterfly'),
+('S127', 'Riku', 'Somatomo','2004-03-14', 'M', 'C021', 'B002', 'Incapable', 'Social Butterfly'),
+('S128', 'Tokuko', 'Kitagawa','2005-08-20', 'F', 'C012', 'B002', 'Incapable', 'Social Butterfly'),
+('S129', 'Kokona', 'Haruka','2005-02-14', 'F', 'C011', 'B002', 'Incapable', 'Social Butterfly'),
+('S130', 'Shin', 'Higaku','2003-02-01', 'M', 'C032', 'B003', 'Incapable', 'Coward'),
+('S131', 'Chojo', 'Tekina','2003-02-09', 'M', 'C031', 'B003', 'Incapable', 'Coward'),
+('S132', 'Supana', 'Churu','2005-01-15', 'F', 'C012', 'B003', 'Incapable', 'Coward'),
+('S133', 'Kokuma', 'Jutsu','2005-02-01', 'F', 'C011', 'B003', 'Incapable', 'Coward'),
+('S134', 'Gema', 'Taku','2003-09-03', 'M', 'C032', 'B011', 'Incapable', 'Loner'),
+('S135', 'Ryuto', 'Ippongo','2003-09-19', 'M', 'C031', 'B011', 'Incapable', 'Phone Addict'),
+('S136', 'Pippi', 'Osafune','2004-02-20', 'M', 'C022', 'B011', 'Incapable', 'Phone Addict'),
+('S137', 'Midori', 'Gurin','2005-02-01', 'M', 'C012', 'B011', 'Incapable', 'Phone Addict'),
+('S138', 'Mai', 'Wakahara','2005-08-18', 'M', 'C011', 'B011', 'Incapable', 'Phone Addict'),
+('S139', 'Geiju', 'Tsuburaya','2003-12-25', 'M', 'C032', 'B004', 'Incapable', 'Loner'),
+('S140', 'Borupen', 'Saishiki','2003-07-02', 'M', 'C031', 'B004', 'Incapable', 'Spiteful'),
+('S141', 'Enji', 'Yodogawa','2004-07-02', 'M', 'C021', 'B004', 'Incapable', 'Social Butterfly'),
+('S142', 'Maka', 'Tansei','2005-07-01', 'F', 'C012', 'B004', 'Incapable', 'Social Butterfly'),
+('S143', 'Efude', 'Nurimono','2005-07-01', 'F', 'C011', 'B004', 'Incapable', 'Social Butterfly'),
+('S144', 'Miyuji', 'Shan','2003-06-25', 'F', 'C032', 'B005', 'Incapable', 'Social Butterfly'),
+('S145', 'Gita', 'Yamahato','2003-06-14', 'F', 'C031', 'B005', 'Incapable', 'Social Butterfly'),
+('S146', 'Beshi', 'Takamine','2004-06-11', 'F', 'C021', 'B005', 'Incapable', 'Social Butterfly'),
+('S147', 'Dora', 'Tamamoto','2005-06-06', 'F', 'C012', 'B005', 'Incapable', 'Social Butterfly'),
+('S148', 'Kiba', 'Kawaito','2005-07-09', 'F', 'C011', 'B005', 'Incapable', 'Social Butterfly'),
+('S149', 'Budo', 'Masuta','2003-10-28', 'M', 'C032', 'B006', 'Peak Physical Strength', 'Heroic'),
+('S150', 'Sho', 'Kunikida','2003-11-01', 'M', 'C031', 'B006', 'Strong', 'Heroic'),
+('S151', 'Juku', 'Renbutsu','2004-11-15', 'M', 'C021', 'B006', 'Very Weak', 'Heroic'),
+('S152', 'Mina', 'Rai','2005-12-03', 'F', 'C012', 'B006', 'Very Strong', 'Heroic'),
+('S153', 'Shima', 'Shiya','2005-12-02', 'F', 'C011', 'B006', 'Weak', 'Heroic'),
+('S154', 'Fureddo', 'Jonzu','2003-12-25', 'M', 'C032', 'B007', 'Strong', 'Sleuth'),
+('S155', 'Rojasu', 'Norubiru','2003-06-01', 'M', 'C031', 'B007', 'Incapable', 'Sleuth'),
+('S156', 'Sukubi', 'Dubidu','2004-06-07', 'M', 'C021', 'B007', 'Incapable', 'Sleuth'),
+('S157', 'Dafuni', 'Bureiku','2005-06-07', 'F', 'C012', 'B007', 'Incapable', 'Sleuth'),
+('S158', 'Beruma', 'Dinkuri','2005-06-16', 'F', 'C011', 'B007', 'Incapable', 'Sleuth'),
+('S159', 'Kaga', 'Kusha','2003-12-22', 'M', 'C032', 'B008', 'Incapable', 'Teacher Pet'),
+('S160', 'Horo', 'Guramu','2003-12-21', 'M', 'C031', 'B008', 'Incapable', 'Teacher Pet'),
+('S161', 'Yaku', 'Zaishi','2004-12-11', 'M', 'C021', 'B008', 'Incapable', 'Teacher Pet'),
+('S162', 'Meka', 'Nikaru','2005-06-11', 'F', 'C012', 'B008', 'Incapable', 'Teacher Pet'),
+('S163', 'Homu', 'Kurusu','2005-05-12', 'F', 'C011', 'B008', 'Incapable', 'Teacher Pet'),
+('S164', 'Itachi', 'Zametora','2003-05-22', 'M', 'C032', 'B009', 'Peak Physical Strength', 'Heroic'),
+('S165', 'Hojiro', 'Zameshiro','2003-05-28', 'M', 'C031', 'B009', 'Very Strong', 'Heroic'),
+('S166', 'Unagi', 'Denkashiza','2004-05-18', 'M', 'C021', 'B009', 'Strong', 'Heroic'),
+('S167', 'Iruka', 'Dorufino','2005-05-31', 'M', 'C012', 'B009', 'Weak', 'Heroic'),
+('S168', 'Mantaro', 'Sashimasu','2005-07-04', 'M', 'C011', 'B009', 'Very Weak', 'Heroic'),
+('S169', 'Uekiya', 'Engeika','2003-10-02', 'F', 'C032', 'B010', 'Incapable', 'Social Butterfly'),
+('S170', 'Himari', 'Fujita','2003-07-27', 'F', 'C031', 'B010', 'Very Weak', 'Heroic'),
+('S171', 'Sakura', 'Hagiwara','2004-04-15', 'F', 'C021', 'B010', 'Incapable', 'Social Butterfly'),
+('S172', 'Sumire', 'Suzuki','2005-10-04', 'F', 'C012', 'B010', 'Incapable', 'Social Butterfly'),
+('S173', 'Tsubaki', 'Uesugi','2005-12-02', 'F', 'C011', 'B010', 'Incapable', 'Social Butterfly'),
+('S174', 'Umeji', 'Kizuguchi','2003-05-15', 'M', 'C031', 'B101', 'Violent', 'Armed'),
+('S175', 'Hokuto', 'Furukizu','2004-05-15', 'M', 'C022', 'B101', 'Violent', 'Armed'),
+('S176', 'Gaku', 'Hikitsuri','2004-07-07', 'M', 'C021', 'B101', 'Violent', 'Armed'),
+('S177', 'Hayanari', 'Tsumeato','2004-07-14', 'M', 'C022', 'B101', 'Violent', 'Armed'),
+('S178', 'Dairoku', 'Surikizu','2004-07-22', 'M', 'C022', 'B101', 'Violent', 'Armed'),
+('S179', 'Musume', 'Ronshaku','2003-06-01', 'F', 'C032', 'B103', 'Incapable', 'Phone Addict'),
+('S180', 'Kashiko', 'Murasaki','2003-06-03', 'F', 'C031', 'B103', 'Incapable', 'Phone Addict'),
+('S181', 'Hana', 'Daidaiyama','2004-04-07', 'F', 'C021', 'B103', 'Incapable', 'Phone Addict'),
+('S182', 'Kokoro', 'Momoiro','2005-04-12', 'F', 'C012', 'B103', 'Incapable', 'Phone Addict'),
+('S183', 'Hoshiko', 'Mizudori','2005-04-13', 'F', 'C011', 'B103', 'Incapable', 'Phone Addict'),
+('S184', 'Kuroko', 'Kamenaga','2003-11-01', 'F', 'C032', 'B102', 'Dangerous', 'Carries Pepper Spray'),
+('S185', 'Shiromi', 'Torayoshi','2003-11-11', 'F', 'C011', 'B102', 'Dangerous', 'Carries Pepper Spray'),
+('S186', 'Akane', 'Toriyasu','2003-11-12', 'F', 'C031', 'B102', 'Dangerous', 'Carries Pepper Spray'),
+('S187', 'Aoi', 'Ryugoku','2003-11-15', 'F', 'C022', 'B102', 'Dangerous', 'Carries Pepper Spray'),
+('S190', 'Info', 'Chan','2005-05-05', 'F', 'C022', NULL, 'Dangerous', 'Carries Pepper Spray');
+GO
+
+
+INSERT INTO Subject (SubjectID, SubjectName) VALUES
+('ST01', 'Biology'),
+('ST02', 'Chemistry'),
+('ST03', 'Language'),
+('ST04', 'Physical Education'),
+('ST05', 'Psychology');
+GO

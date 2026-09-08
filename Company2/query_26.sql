@@ -1,0 +1,4 @@
+SELECT PNumber FROM Project
+UNION
+SELECT PNo FROM Works_On;
+GO

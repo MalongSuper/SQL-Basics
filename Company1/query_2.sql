@@ -1,0 +1,3 @@
+SELECT * FROM Dependent
+SELECT * FROM Employee WHERE DNo = 5
+SELECT ESSN, Dependent_Name FROM Dependent WHERE ESSN IN (SELECT SSN FROM Employee WHERE DNo = 5)

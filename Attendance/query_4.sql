@@ -1,0 +1,17 @@
+USE Attendence
+INSERT INTO Subject(SubjectId, Name) VALUES ('IT1234323', 'Python Programming')
+INSERT INTO Subject(SubjectId, Name) VALUES ('IT1234325', 'Java Programming')
+INSERT INTO Subject(SubjectId, Name) VALUES ('IT1234328', 'Introduction to Probability')
+INSERT INTO Subject(SubjectId, Name) VALUES ('AI1234335', 'Machine Learning with Python')
+INSERT INTO Subject(SubjectId, Name) VALUES ('CS1233242', 'Database Management with SQL Server')
+INSERT INTO Subject(SubjectId, Name) VALUES ('AI1234354', 'Data Structures and Algorithms')
+INSERT INTO Subject(SubjectId, Name) VALUES ('AI1234432', 'Numerical Methods')
+INSERT INTO Subject(SubjectId, Name) VALUES ('IT1234433', 'Cloud Computing')
+INSERT INTO Subject(SubjectId, Name) VALUES ('IT1234434', 'Statistics and Engineering')
+INSERT INTO Subject(SubjectId, Name) VALUES ('AI1234433', 'Artificial Intelligence')
+INSERT INTO Subject(SubjectId, Name) VALUES ('AI1233233', 'Optimization Problems')
+INSERT INTO Subject(SubjectId, Name) VALUES ('AI1233203', 'Discrete Structures')
+INSERT INTO Subject(SubjectId, Name) VALUES ('IT1234343', 'The Basics of Algebra & Calculus')
+INSERT INTO Subject(SubjectId, Name) VALUES ('IT1234993', 'Advanced Geometry')
+INSERT INTO Subject(SubjectId, Name) VALUES ('CS1234444', 'The Basics of Computer')
+
