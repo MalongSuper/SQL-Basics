@@ -1,39 +1,20 @@
+# SQL Basics
+
 <img src="./microsoft_sql_server_logo.png" alt="Microsoft SQL Server Logo" width="200"/>
 
-# My-SQL-Programming
+This repository stores SQL code and examples covering the fundamentals of **Structured Query Language (SQL)**.
 
-The storage for Microsoft SQL Server code
+The code is primarily organized based on the **database or database system** being used, with each section containing queries, exercises, and examples related to that database.
 
-# Useful websites and tools
+Topics may include:
 
-## SQL Tutorial by w3schools
+* Basic SQL syntax and queries
+* `SELECT`, `INSERT`, `UPDATE`, and `DELETE`
+* Filtering, sorting, and grouping data
+* Joins and relationships between tables
+* Aggregate functions and subqueries
+* Database and table creation
+* Constraints and data integrity
+* Database-specific features and syntax
 
-https://www.w3schools.com/sql/default.asp
-
-## SQL Tutorial by tutorialspoint
-
-https://www.tutorialspoint.com/sql/index.htm
-
-## SQL Fiddle, an online SQL compiler that lets you write, edit, and execute any SQL query
-
-https://sqlfiddle.com
-
-## Azure Data Studio (recommended for Mac)
-
-https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall
-
-## Visual Studio Code 
-
-https://code.visualstudio.com/download
-
-## SQL Server Management Studio
-
-https://learn.microsoft.com/en-us/ssms/install/install
-
-## Docker
-
-https://www.docker.com/get-started/
-
-# Course: Database Management with SQL Server
-
-https://dune-web-e44.notion.site/Database-Management-with-SQL-Server-20c622d60556801c9860c99410a66b76?source=copy_link
+More databases, examples, and SQL exercises may be added over time.
